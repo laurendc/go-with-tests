@@ -3,7 +3,7 @@ name: Go
 on:
   push:
     branches:
-      - '!master' 
+      - '!main' 
 jobs:
 
   build:
@@ -32,4 +32,4 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          branch: '!master'
+          branch: '!main'
